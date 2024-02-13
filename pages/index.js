@@ -10,7 +10,7 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
 	return (
-		<div className="">
+		<div className="z-10">
 			{/* text */}
 			<div className="w-full mt-8 h-full">
 				<div className="text-center flex flex-col justify-center xl:text-left  container mx-auto md:h-[70vh] lg:h-[50vh] xl:h-[60vh]">
@@ -38,7 +38,7 @@ const Home = () => {
 						atque rem.
 					</motion.p>
 					{/* btn */}
-					<div className="flex justify-center xl:hidden relative">
+					<div className="flex justify-center xl:hidden relative z-10">
 						<ProjectsBtn />
 					</div>
 					<motion.div
