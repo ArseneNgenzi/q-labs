@@ -5,8 +5,8 @@ import Socials from "../components/Socials";
 
 const Header = () => {
 	return (
-		<header className=" pt-8 xl:pt-0  w-full flex items-center px-16 xl:px-0 ">
-			<div className=" container mx-auto">
+		<header className=" pt-8 xl:pt-0  w-full flex items-center px-16 xl:px-0 z-50">
+			<div className=" container mx-auto z-10">
         {/* <div>
           <Link href={'/'}> <Image src={'/logo.svg'} width={220} height={48}/></Link>
         </div> */}
