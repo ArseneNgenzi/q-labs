@@ -11,7 +11,7 @@ const sora = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 })
 const Layout = ({children}) => {
-  return <div className={`  text-gray-200 bg-black/50 ${sora.variable} font-sora  h-screen`}>
+  return <div className={`  text-gray-200 bg-black/50 ${sora.variable} font-sora w-[100%]  h-screen`}>
     <TopLeftImg/>
     <Nav/>
     <Header/>

@@ -120,7 +120,7 @@ const About = () => {
 						animate="show"
 						exit="hidden"
 					>
-						Designs which captivate <span className=" text-accent">magnificent </span>stories
+						Creating data driven <span className=" text-accent">designs </span>
 					</motion.h2>
 					<motion.p
 						className=" max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"

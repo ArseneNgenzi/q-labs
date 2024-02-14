@@ -10,17 +10,17 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
 	return (
-		<div className="z-10">
+		<div className=" w-[100%]">
 			{/* text */}
-			<div className="w-full mt-8 h-full">
-				<div className="text-center flex flex-col justify-center xl:text-left  container mx-auto md:h-[70vh] lg:h-[50vh] xl:h-[60vh]">
+			<div className="w-full mt-8 h-full ">
+				<div className="text-center flex flex-col justify-center xl:text-left  container mx-auto md:h-[70vh] lg:h-[50vh] xl:h-[60vh] z-50">
 					{/* title */}
 					<motion.h1
 						variants={fadeIn("down", 0.2)}
 						initial="hidden"
 						animate="show"
 						exit="hidden"
-						className="h1 z-30"
+						className="h1 z-50"
 					>
 						Transforming Ideas <br /> Into{" "}
 						<span className="text-accent">Digital Reality</span>
@@ -31,14 +31,14 @@ const Home = () => {
 						initial="hidden"
 						animate="show"
 						exit="hidden"
-						className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30  px-4 text-justify py-2"
+						className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-50  px-4 text-justify py-2"
 					>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem vel
 						nostrum, totam minus distinctio autem quisquam repellendus modi
 						atque rem.
 					</motion.p>
 					{/* btn */}
-					<div className="flex justify-center xl:hidden relative z-10">
+					<div className="flex justify-center xl:hidden relative z-50">
 						<ProjectsBtn />
 					</div>
 					<motion.div
