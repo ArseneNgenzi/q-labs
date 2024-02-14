@@ -26,7 +26,7 @@ import {
 //  data
 const aboutData = [
 	{
-		title: "Technologies",
+		title: "Team",
 		info: [
 			{
 				title: "Web Development",
@@ -47,35 +47,57 @@ const aboutData = [
 		],
 	},
 	{
-		title: "awards",
+		title: "Technologies",
 		info: [
 			{
-				title: "Webby Awards - Honoree",
-				stage: "2011 - 2012",
+				title: "Web Development",
+				icons: [
+					<FaHtml5 key=''/>,
+					<FaCss3 key=''/>,
+					<FaJs key=''/>,
+					<FaReact key=''/>,
+					<SiNextdotjs key=''/>,
+					<SiFramer key=''/>,
+					<FaWordpress key=''/>,
+				],
 			},
 			{
-				title: "Adobe Design Achievement Awards - Finalist",
-				stage: "2009 - 2010",
+				title: "UI/UX Design",
+				icons: [<FaFigma key=''/>, <SiAdobexd key=''/>, <SiAdobephotoshop key=''/>],
 			},
 		],
 	},
-	{
-		title: "experience",
-		info: [
-			{
-				title: "UX/UI Designer - XYZ Company",
-				stage: "2012 - 2023",
-			},
-			{
-				title: "Web Developer - ABC Agency",
-				stage: "2010 - 2012",
-			},
-			{
-				title: "Intern - DEF Corporation",
-				stage: "2008 - 2010",
-			},
-		],
-	},
+	
+	// {
+	// 	title: "awards",
+	// 	info: [
+	// 		{
+	// 			title: "Webby Awards - Honoree",
+	// 			stage: "2011 - 2012",
+	// 		},
+	// 		{
+	// 			title: "Adobe Design Achievement Awards - Finalist",
+	// 			stage: "2009 - 2010",
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	title: "experience",
+	// 	info: [
+	// 		{
+	// 			title: "UX/UI Designer - XYZ Company",
+	// 			stage: "2012 - 2023",
+	// 		},
+	// 		{
+	// 			title: "Web Developer - ABC Agency",
+	// 			stage: "2010 - 2012",
+	// 		},
+	// 		{
+	// 			title: "Intern - DEF Corporation",
+	// 			stage: "2008 - 2010",
+	// 		},
+	// 	],
+	// },
 	{
 		title: "credentials",
 		info: [
@@ -111,8 +133,8 @@ const About = () => {
 			>
 				<Avatar />
 			</motion.div> */}
-			<div className=" container mx-auto  flex flex-col items-center xl:flex-row  gap-x-6 lg:h-[60vh] xl:h-[70vh] ">
-				<div className=" flex-1 flex flex-col justify-center">
+			<div className=" container mx-auto  flex flex-col items-center lg:flex-row  gap-x-6 lg:h-[60vh] xl:h-[70vh] ">
+				<div className=" flex-1 flex flex-col justify-center lg:h-[60%]">
 					<motion.h2
 						className="h2"
 						variants={fadeIn("up", 0.2)}
@@ -182,7 +204,7 @@ const About = () => {
 					</motion.div>
 				</div>
 				<motion.div
-					className=" flex flex-col w-full xl:max-w-[48%] h-auto "
+					className=" flex flex-col w-full xl:max-w-[48%] lg:h-[60%] "
 					variants={fadeIn("up", 0.4)}
 					initial="hidden"
 					animate="show"
@@ -205,8 +227,8 @@ const About = () => {
 						})}
 					</div>
 					<div className="  py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-						{aboutData[index].info.map((item, itemIndex) => {
-							return (
+						{aboutData[index].info.map((item, itemIndex) => (
+							
 								<div
 									key={itemIndex}
 									className=" flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
@@ -226,8 +248,8 @@ const About = () => {
 										})}
 									</div>
 								</div>
-							);
-						})}
+							
+						))}
 					</div>
 				</motion.div>
 			</div>

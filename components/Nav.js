@@ -32,7 +32,7 @@ const Nav = () => {
 	const pathname = router.pathname
 
 	return (
-		<nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max  mt-auto xl:right-[1%] z-10 top-0 w-full xl:w-10 xl:max-w-md xl:h-screen">
+		<nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max  mt-auto xl:right-[1%] z-50 bottom-0 w-full xl:w-10 xl:max-w-md xl:h-screen">
 			{/* Inner */}
 			<div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-4 xl:px-0 h-auto xl:h-max py-4 bg-black/50 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
 				{navData.map((link, index) => {
