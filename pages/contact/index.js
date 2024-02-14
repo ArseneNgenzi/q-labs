@@ -12,7 +12,7 @@ const Contact = () => {
 			<div className=" container mx-auto  text-center xl:text-left flex items-center justify-center ">
 				<div className=" flex flex-col w-full max-w-[700px] ">
 					<motion.h2 
-            variants={fadeIn('left', 0.2)}
+            variants={fadeIn('down', 0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
@@ -22,7 +22,7 @@ const Contact = () => {
 
 					<motion.form 
             className=" flex-1 flex flex-col gap-4 w-full mx-auto"
-            variants={fadeIn('right', 0.4)}
+            variants={fadeIn('up', 0.4)}
             initial='hidden'
             animate='show'
             exit='hidden'

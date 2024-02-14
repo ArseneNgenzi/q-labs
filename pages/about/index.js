@@ -100,7 +100,7 @@ const About = () => {
 	// console.log(index);
 	return (
 		<div className=" mt-8 text-center xl:text-left">
-			<Circles />
+			{/* <Circles /> */}
 			{/* Avatar img */}
 			{/* <motion.div
 				className=" hidden xl:flex absolute bottom-0 -left-[370px]"
@@ -115,7 +115,7 @@ const About = () => {
 				<div className=" flex-1 flex flex-col justify-center">
 					<motion.h2
 						className="h2"
-						variants={fadeIn("right", 0.2)}
+						variants={fadeIn("up", 0.2)}
 						initial="hidden"
 						animate="show"
 						exit="hidden"
@@ -124,7 +124,7 @@ const About = () => {
 					</motion.h2>
 					<motion.p
 						className=" max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
-						variants={fadeIn("right", 0.4)}
+						variants={fadeIn("down", 0.4)}
 						initial="hidden"
 						animate="show"
 						exit="hidden"
@@ -183,7 +183,7 @@ const About = () => {
 				</div>
 				<motion.div
 					className=" flex flex-col w-full xl:max-w-[48%] h-auto "
-					variants={fadeIn("left", 0.4)}
+					variants={fadeIn("up", 0.4)}
 					initial="hidden"
 					animate="show"
 					exit="hidden"
